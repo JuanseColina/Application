@@ -8,6 +8,7 @@ MySQL
 Rider IDE
 
 Modos de uso
-Al ejecutar muestra mensajes en la pantalla la cual nos indica si queremos logear o registrarnos cuyo datos se guardan en una base.
+Ingresar a MobileApp.cs
+Al ejecutar muestra mensajes en la pantalla la cual nos indica si queremos logear o registrarnos cuyo datos se guardan en una base "console.sql".
 Una vez ingresado a la parte de pagos elegimos el servicio que querramos pagar.
 Ingrese el monto indicado para ejecutar su pago.

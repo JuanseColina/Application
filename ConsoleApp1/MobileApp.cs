@@ -102,7 +102,7 @@ class PaymentApp
                 rdr.Read();
                 string name = rdr["name"].ToString();
                 Console.WriteLine("Bienvenido " + name + ", iniciaste sesión correctamente");
-                ShowStores();
+                ShowServices();
             }
             else
             {
@@ -116,9 +116,9 @@ class PaymentApp
 
         conn.Close();
     }
-    static void ShowStores()
+    static void ShowServices()
     {
-        Console.WriteLine("Selecciona una tienda para realizar el pago:");
+        Console.WriteLine("Selecciona un servicio para realizar el pago:");
         Console.WriteLine("1 - ANDE");
         Console.WriteLine("2 - TIGO");
         Console.WriteLine("3 - PERSONAL");
@@ -142,16 +142,16 @@ class PaymentApp
         }
     }
 
-    static void RegisterPayment(string store)
+    static void RegisterPayment(string service)
     {
         User user; 
         Console.WriteLine("Ingresa su numero de documento:");
         
 
-        Console.WriteLine("Ingresa el monto a pagar en " + store);
+        Console.WriteLine("Ingresa el monto a pagar en " + service);
         double amount = Convert.ToDouble(Console.ReadLine());
         
-        Console.WriteLine("Pago registrado correctamente en " + store);
+        Console.WriteLine("Pago registrado correctamente en " + service);
         Main();
     }
     public static bool VerifyDocumentNumber(string documentNumber)
